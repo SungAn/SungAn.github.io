@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: Arial;
+  font-family:"Trebuchet MS";
   background: #f1f1f1;
 }
 
@@ -27,22 +27,22 @@ body {
 }
 
 /* Navigation */
-.topnav {
+.navbar {
   overflow: hidden;
   background-color: #333;
 }
 
 /* Linking Nav */
-.topnav a {
+.navbar a {
   float: left;
   display: block;
   color: #f2f2f2;
   text-align: center;
-  padding: 14px 16px;
+  padding: 14px;
   text-decoration: none;
 }
   
-.topnav a:hover {
+.navbar a:hover {
   background-color: #ddd;
   color: black;
 }
@@ -63,26 +63,17 @@ body {
 /* instead of pages, infinite scroll */
 .card1 {
   width: 100%;
-  height: 500px;
-  /*background-repeat: no-repeat, repeat;
-  background-image: url("https://www.seetorontonow.com/wp-content/uploads/2017/12/cn-tower-dusk.jpg"), url("https://i.pinimg.com/474x/10/23/3d/10233db29952e589ccaa7239cc5b3e4e--pastel.jpg");
-  background-blend-mode: lighten;*/
+  height: auto;
 }
 
 .card2 {
   width: 100%;
-  height: 500px;
-  /*background-repeat: no-repeat, repeat;
-  background-image: url("https://www.insidehighered.com/sites/default/server_files/styles/large-copy/public/media/file-picture-id696301002.jpg?itok=ndSrhDIn"), url("https://www.color-hex.com/palettes/22929.png");
-  background-blend-mode: lighten;*/
+  height: 600px;
 }
 
 .card3 {
   width: 100%;
-  height: 500px;
-  /*background-repeat: no-repeat, repeat;
-  background-image: url("https://www.drugtopics.com/sites/default/files/FutureTech_189949098.png"), url("https://i.pinimg.com/474x/1b/d7/8d/1bd78daab0bd76b6352dcefceb72c6ca--plain-background-colors-wallpapers-phone-backgrounds.jpg");
-  background-blend-mode: lighten;*/
+  height: auto;
 }
 
 
@@ -99,19 +90,11 @@ h2:hover {
   text-align: center;
 }
 
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
 /* Footer */
 .footer {
   padding: 20px;
   text-align: center;
   background: #ddd;
-  margin-top: 20px;
 }
 
 
@@ -124,31 +107,32 @@ h2:hover {
   <p>Bringing justice closer to home.</p>
 </div>
 
-<div class="topnav">
+<div class="navbar">
   <a href="#">Background</a>
   <a href="#">Product</a>
   <a href="#">Future Steps</a>
   <a href="#" style="float:right">Contact</a>
 </div>
 
-<div class="row">
   <div class="column">
+    <div class="card2">
+      <h2>Product</h2>
+      <h5><i>When faced with charges and prosecutions, our app lets you know your eligibility for resources by snapping a single picture</i></h5>
+      <img src="PhoneFront.jpg">
+      <h5><i>With a user friendly guide</i></h5>
+      <img src="PhoneHelp.jpg">
+      <h5><i>A sophisticated Convolutional Neural Network that identifies the necessary information</i></h5>
+      <img src="AlgorithmFlow.jpg">
+      <p>Yoinks YEEEET wot</p>
+    </div>
     <div class="card1">
       <h2>Background</h2>
       <h5>Understanding Crown Disclosures</h5>
-      <p>EXAMPLE FORM OR STATS HERE??</p>
-      <img src="clean form.jpg" style="width:90px;height:128px;">
-      <p>Designed to 
+      <img src="clean form.jpg" style="width:20%;height:20%;">
+      <p>
+      Designed to 
       </p> 
     </div>
-    <div class="card2">
-      <h2>Product</h2>
-      <h5>A Convolutional Neural Network that extracts data</h5>
-      <p>Some text..</p>
-      <p>Yoinks YEEEET wot</p>
-    </div>
-  </div>
-  <div class="column">
     <div class="card3">
       <h2>Future Steps</h2>
       <h5>Plans to expand beyond crown disclosing</h5>
@@ -156,7 +140,6 @@ h2:hover {
     </div>
    
   </div>
-</div>
 
 <div class="footer">
   <h3>Global Legal Hackathon 2020</h3>
@@ -166,8 +149,8 @@ h2:hover {
 <script>
   window.onscroll = function() {myFunction()};
 
-  var navbar = document.getElementById("topnav");
-  var sticky = topnav.offsetTop;
+  var navbar = document.getElementById("navbar");
+  var sticky = navbar.offsetTop;
 
   function myFunction() {
     if (window.pageYOffset >= sticky) {
