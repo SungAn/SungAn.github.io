@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  background: #f1f1f1;
+}
+
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  width:100%;
+  text-align: center;
+  background-repeat: no-repeat, repeat;
+  background-image: url("https://www.studyfinds.org/wp-content/uploads/2019/09/AdobeStock_257633602-816x520.jpeg"), url("https://i.etsystatic.com/9606375/r/il/a2e5d2/1118719234/il_1588xN.1118719234_3v8a.jpg");
+  background-blend-mode: lighten
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.column {   
+  width: 100%;
+  background-color: white;
+}
+
+
+/* Add a card effect for articles */
+.card1 {
+  width: 100%;
+  height: 500px;
+  background-repeat: no-repeat, repeat;
+  background-image: url("https://www.seetorontonow.com/wp-content/uploads/2017/12/cn-tower-dusk.jpg"), url("https://i.pinimg.com/474x/10/23/3d/10233db29952e589ccaa7239cc5b3e4e--pastel.jpg");
+  background-blend-mode: lighten;
+}
+
+.card2 {
+  width: 100%;
+  height: 500px;
+  background-repeat: no-repeat, repeat;
+  background-image: url("https://www.insidehighered.com/sites/default/server_files/styles/large-copy/public/media/file-picture-id696301002.jpg?itok=ndSrhDIn"), url("https://www.color-hex.com/palettes/22929.png");
+  background-blend-mode: lighten;
+}
+
+.card3 {
+  width: 100%;
+  height: 500px;
+  background-repeat: no-repeat, repeat;
+  background-image: url("https://www.drugtopics.com/sites/default/files/FutureTech_189949098.png"), url("https://www.ppt-backgrounds.net/uploads/light-purple-color-quality-background.jpeg");
+  background-blend-mode: lighten;
+}
+
+
+/*Hovering*/
+h2 {
+  width: 25%;
+  background-repeat: repeat;
+  background-image:  url("https://i.etsystatic.com/9606375/r/il/a2e5d2/1118719234/il_1588xN.1118719234_3v8a.jpg");
+  transition: width 2s;
+  text-align: center;
+}
+h2:hover {
+  width: 100%;
+  text-align: center;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>TL;DR</h1>
+  <p>Bringing justice closer to home.</p>
+</div>
+
+<div class="topnav">
+  <a href="#">Background</a>
+  <a href="#">Product</a>
+  <a href="#">Future Steps</a>
+  <a href="#" style="float:right">Contact</a>
+</div>
+
+<div class="row">
+  <div class="column">
+    <div class="card1">
+      <h2>Background</h2>
+      <h5>Understanding Crown Disclosures</h5>
+      <p>EXAMPLE FORM OR STATS HERE??</p>
+      <p>What is the issue we are solving??
+      </p> 
+    </div>
+    <div class="card2">
+      <h2>Product</h2>
+      <h5>A Convolutional Neural Network that extracts data</h5>
+      <p>Some text..</p>
+      <p>Yoinks YEEEET wot</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card3">
+      <h2>Future Steps</h2>
+      <h5>Plans to expand beyond crown disclosing</h5>
+      <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+    </div>
+   
+  </div>
+</div>
+
+<div class="footer">
+  <h3>Global Legal Hackathon 2020</h3>
+  <h5>Sofia Sugumar - Dylan Juschko - Ryan Khurana - Sung An</h5>
+  <p>See our example code <a href="https://drive.google.com/open?id=1NrGPyFfW9RC3qda564ha9tJ3r9Q-rVg3">here!</a></p>
+</div>
+
+</body>
+</html>
